@@ -2,7 +2,7 @@ library(shiny)
 library(shinyLP)
 library(shinyBS)
 library(shinythemes)
-shinyLP::runExample()
+#shinyLP::runExample()
 
 # This is the user-interface definition of a Shiny web application. You can
 # run the application by clicking 'Run App' above.
@@ -32,23 +32,23 @@ shinyUI(
         )
     ),
     
-    navbarPage(title=div(img(src="Rlogo.png"), "Application NavBar Title"),
+    navbarPage(title=div(img(src="dpine_lockup.jpg"), "Different Ways to Use the App"),
                inverse = F, # for diff color view
-               theme = shinytheme("united"),
+               theme = shinytheme("slate"),
                
-               tabPanel("Home Page 1", icon = icon("home"),
+               tabPanel("Home Page", icon = icon("home"),
                         
-                        jumbotron("Hi ShinyLP!", "Call attention to important application features or provide guidance",
+                        jumbotron("This will be the home page for the App", "A brief introduction will go here\nincluding link to the original publication\nas well as this publication",
                                   buttonLabel = "Click Me"),
                         fluidRow(
-                          column(6, panel_div(class_type = "primary", panel_title = "Directions",
-                                              content = "How to use the app")),
-                          column(6, panel_div("success", "Application Maintainers",
-                                              HTML("Email Me: <a href='mailto:jasmine.dumas@gmail.com?Subject=Shiny%20Help' target='_top'>Jasmine Dumas</a>")))
+                          column(6, panel_div(class_type = "success", panel_title = "Directions",
+                                              content = "Description of different types of experiments and the tabs for those")),
+                          column(6, panel_div("success", "Application Maintainer",
+                                              HTML("Email Me: <a href='mailto:wellsjasond@gmail.com?Subject=Synergy_App%20Help' target='_top'>Jason Wells</a>")))
                         ),  # end of fluidRow
                         fluidRow(
-                          column(6, panel_div("info", "App Status", "Include text with status, version and updates")),
-                          column(6, panel_div("danger", "Security and License", "Copyright 2016")),
+                          column(6, panel_div("success", "App Status", "Include text with status, version and updates")),
+                          column(6, panel_div("success", "Security and License", "Copyright 2019")),
                           
                           #### FAVICON TAGS SECTION ####
                           tags$head(tags$link(rel="shortcut icon", href="favicon.ico")),
