@@ -32,7 +32,7 @@ shinyUI(
         )
     ),
     
-    navbarPage(title=div(img(src="dpine_lockup.jpg"), "Different Ways to Use the App"),
+    navbarPage(title=div(img(src="dpine_lochup_40x31.jpg"), "Different Ways to Use the App"),
                inverse = F, # for diff color view
                theme = shinytheme("slate"),
                
@@ -59,46 +59,36 @@ shinyUI(
                           )
                           
                         )),
-               tabPanel("Home Page 2", icon = icon("cog"),
-                        wells(content = "Imporant Info can go up here before a
-                              user starts exploring the application and its features",
+               tabPanel("Single Dose", icon = icon("dna"),
+                        wells(content = "Here is where you can analyze data from an experiment where a single dose of each treatment was used",
                               size = "default"),
-                        h1("Hello Visitors!", align = "center"),
+                        h1("Hey There!", align = "center"),
                         hr(),
                         
-                        list_group(div(list_item("Application Updates", badge_value = 27),
-                                       list_item("User Updates", badge_value = 24)))
+                        list_group(div(list_item("Maybe Number of Users", badge_value = 270000),
+                                       list_item("Number of Updates", badge_value = 24)))
                         
                         
                ),
                
-               tabPanel("Home Page 3", icon = icon("calendar"),
+               tabPanel("All Designs", icon = icon("dna"),
                         
-                        jumbotron("Hello shinyLP!", "Dock Several Applications on a page as a portal",
+                        jumbotron("Hey There!", "Could possibly link to all different experiment apps here??",
                                   button = FALSE),
                         hr(),
                         fluidRow(
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 1',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                                    but havana brown devonshire rex and devonshire rex.
-                                                    Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                                    cougar and panther. Panther siberian. Lynx munchkin
-                                                    american shorthair. Norwegian forest. ',
-                                                    button_link = 'http://getbootstrap.com/', button_label = 'Click me')
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Single Dose',
+                                                    content = 'This would be the location of the first experimental design
+                                                    with single dose treatments of each drug',
+                                                    button_link = 'C:/Users/jwells/Desktop/app.R', button_label = 'Click me')
                           ),
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 2',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                                    but havana brown devonshire rex and devonshire rex.
-                                                    Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                                    cougar and panther. Panther siberian. Lynx munchkin
-                                                    american shorthair. Norwegian forest. ',
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'With Control Group',
+                                                    content = 'This would be the location of the second experimental design
+                                                    with comparisons to control groups',
                                                     button_link = 'http://getbootstrap.com/', button_label = 'Click me')),
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Application 3',
-                                                    content = 'Havana brown cornish rex bombay but bombay,
-                                                    but havana brown devonshire rex and devonshire rex.
-                                                    Tomcat egyptian mau. Cornish rex sphynx sphynx yet
-                                                    cougar and panther. Panther siberian. Lynx munchkin
-                                                    american shorthair. Norwegian forest. ',
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Tumor Growth',
+                                                    content = 'This would be the location of the third experimental design
+                                                    that analyzes results of tumor growth experiments',
                                                     button_link = 'http://getbootstrap.com/', button_label = 'Click me'))
                           
                           )))
