@@ -77,14 +77,14 @@ shinyUI(
                                   button = FALSE),
                         hr(),
                         fluidRow(
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'Single Dose',
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'in vitro',
                                                     content = 'This would be the location of the first experimental design
-                                                    with single dose treatments of each drug',
+                                                    with surviving cell fraction data',
                                                     button_link = 'C:/Users/jwells/Desktop/app.R', button_label = 'Click me')
                           ),
-                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'With Control Group',
+                          column(4, thumbnail_label(image = 'Rlogo.png', label = 'dose response',
                                                     content = 'This would be the location of the second experimental design
-                                                    with comparisons to control groups',
+                                                    dose reponse data',
                                                     button_link = 'http://getbootstrap.com/', button_label = 'Click me')),
                           column(4, thumbnail_label(image = 'Rlogo.png', label = 'Tumor Growth',
                                                     content = 'This would be the location of the third experimental design
